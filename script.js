@@ -14,13 +14,14 @@ noteInput.keydown(function(e) {
   if (e.which == 13) {    
     addListItem(name + "/notes", noteInput.val())
     getNotesForName()
+    $("#name-input").append(noteList)
   }
 })
 
 function getNotesForName(name) {  
   onNewListItem(name + "/notes", function(note) {
-    console.log(note)
-    
+    console.log(noteList)
+   
   })
 }
 

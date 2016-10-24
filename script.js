@@ -1,4 +1,3 @@
-addListItem("Tacos" + "/notes", "WASSAP")
 
 var name;
 var nameInput = $("#name-input")
@@ -7,7 +6,8 @@ var noteList = $("#note-list")
 
 nameInput.keydown(function(e) {
   if (e.which == 13) {
-    var name = $("#nameI")
+    var name = $("#nameInput").val()
+    console.log(name)
     addListItem(name + "/notes", "WASSAP")
     // we have a new name! Now what?
   }	

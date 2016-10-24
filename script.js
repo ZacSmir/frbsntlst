@@ -1,16 +1,20 @@
-addListItem("Tacos" + "/notes", "WASSAP")
-
-var name = "my name"
+var name;
 var nameInput = $("#name-input")
 var noteInput = $("#note-input")
 var noteList = $("#note-list")
 
 nameInput.keydown(function(e) {
   if (e.which == 13) {
-    var name = nameInput
+    var name = nameInput.val()
     console.log(name)
-    addListItem(name + "/notes", "WASSAP")
   }	
+})
+
+noteInput.keydown(function(e) {
+  if (e.which == 13) {    
+    addListItem(name + "/notes", noteInput.val())
+    getNotesForName()
+  }
 })
 
 function getNotesForName(name) {  
@@ -19,8 +23,3 @@ function getNotesForName(name) {
   })
 }
 
-noteInput.keydown(function(e) {
-  if (e.which == 13) {    
-    addListItem(name + "/notes", noteInput.val())
-  }
-})

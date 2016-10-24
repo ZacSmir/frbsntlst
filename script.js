@@ -7,7 +7,8 @@ var noteList = $("#note-list")
 
 nameInput.keydown(function(e) {
   if (e.which == 13) {
-    
+    var name = $("#nameI")
+    addListItem(name + "/notes", "WASSAP")
     // we have a new name! Now what?
   }	
 })

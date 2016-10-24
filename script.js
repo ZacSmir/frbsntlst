@@ -6,12 +6,10 @@ var noteInput = $("#note-input")
 var noteList = $("#note-list")
 
 nameInput.keydown(function(e) {
-  
-  
   if (e.which == 13) {
-    console.log("help me")
-    var name = $("#nameInput").val()
-    console.log($("#nameInput").val())
+   
+    var name = document.getElementById("nameInput").value;
+    console.log(document.getElementById("name"))
     console.log(name)
     addListItem(name + "/notes", "WASSAP")
     // we have a new name! Now what?

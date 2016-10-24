@@ -7,6 +7,7 @@ var noteList = $("#note-list")
 
 nameInput.keydown(function(e) {
   if (e.which == 13) {
+    
     // we have a new name! Now what?
   }	
 })

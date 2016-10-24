@@ -1,3 +1,5 @@
+addListItem(name + "/notes", notInput.val())
+
 var name;
 var nameInput = $("#name-input")
 var noteInput = $("#note-input")

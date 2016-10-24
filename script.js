@@ -6,7 +6,6 @@ var noteList = $("#note-list")
 nameInput.keydown(function(e) {
   if (e.which == 13) {
     var name = nameInput.val()
-    console.log(name)
   }	
 })
 

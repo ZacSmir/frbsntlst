@@ -1,6 +1,6 @@
 var firebaseConfig = {
   apiKey: " AIzaSyBTQz6kmAWd-J_10b4036LxO9Gus7eBhFU",
-  authDomain: "classadoo-dev.firebaseapp.com",
+  authDomain: "https://trump-clicker-bae64.firebaseio.com/",
   databaseURL: "https://classadoo-dev.firebaseio.com"	
 };
 
